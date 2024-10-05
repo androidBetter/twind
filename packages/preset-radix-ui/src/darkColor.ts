@@ -1,5 +1,10 @@
-import type { BaseTheme, ColorValue, Context } from '@twind/core'
+import type { ColorValue, Context } from '@twind/core'
+import type { BaseTheme as ImportedBaseTheme } from '@twind/core'
+type BaseTheme = ImportedBaseTheme;
 
+
+
+//
 export default function darkColor<Theme extends BaseTheme = BaseTheme>(
   section: string,
   key: string,
